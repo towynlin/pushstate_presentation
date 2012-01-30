@@ -1,0 +1,102 @@
+$background-color: #fee;
+$color: #322;
+
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 13pt;
+  background-color: #dcc;
+  color: $color;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 120%;
+}
+
+h2 {
+  font-size: 110%;
+}
+
+h3 {
+  font-size: 100%;
+  font-style: italic;
+
+  $stars: ' * * * * * ';
+  &:before {
+    content: $stars;
+  }
+  &:after {
+    content: $stars;
+  }
+}
+
+code {
+  background-color: white;
+  color: black;
+  font-size: 90%;
+}
+
+small {
+  font-size: 60%;
+}
+
+dt {
+  font-weight: bold;
+}
+
+#top {
+  width: 600px;
+  margin: 1em auto;
+  border-width: 2px;
+  border-radius: 4px;
+  border-color: #a77;
+  background-color: $background-color;
+  padding: 10px;
+}
+
+#nav {
+
+  ul {
+    list-style-type: none;
+    font-size: 80%;
+  }
+
+  li {
+    display: inline-block;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 4px;
+    $recover-time: 0.2s;
+    transition: background-color $recover-time;
+    -webkit-transition: background-color $recover-time;
+    -moz-transition: background-color $recover-time;
+    -o-transition: background-color $recover-time;
+    background-color: $background-color;
+
+    &:hover {
+      $hover-time: 0.4s;
+      transition: background-color $hover-time;
+      -webkit-transition: background-color $hover-time;
+      -moz-transition: background-color $hover-time;
+      -o-transition: background-color $hover-time;
+      background-color: white;
+    }
+
+  }
+
+}
+
+a {
+  color: #644;
+}
+
+.reveal {
+  $show-time: 0.6s;
+  transition: opacity, $show-time;
+  -webkit-transition: opacity, $show-time;
+  -moz-transition: opacity, $show-time;
+  -o-transition: opacity, $show-time;
+}

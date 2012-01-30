@@ -1,0 +1,28 @@
+%h2 What's Old?
+%p
+  We've been able to do <code>history.back()</code>,
+  <code>history.forward()</code>, and <code>history.go(-1)</code> for years.
+  We can even find out how many pages are in the history by looking at the
+  %code history.length
+  property.  None of this is new.
+.reveal
+  %h2 What's New?
+  %p
+    The history is now a stack of states that we can not only navigate but also
+    manipulate. The most useful manipulation is pushing a new state onto the
+    stack. Normally, we don't pop states off the stack—though we can with
+    <code>history.back()</code>—but we are notified when the user does so by
+    hitting the back button. The new API:
+  %ul
+    %li
+      %code window.pushState(state, title, path)
+    %li
+      the
+      %code onpopstate
+      event
+    %li
+      %code window.replaceState
+  %p
+    To modify the current state without pushing or popping the history stack, we
+    use <code>replaceState</code>, which takes the same arguments as pushState.
+    I have not yet found any use for this.

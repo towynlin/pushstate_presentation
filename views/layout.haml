@@ -1,0 +1,12 @@
+!!!
+%html{ lang: 'en' }
+  %head
+    %meta{ charset: 'utf-8' }
+    %title HTML5 History API
+    %link{ rel: 'stylesheet', href: 'style.css' }
+    %script{ src: 'script.js' }
+  %body
+    #top
+      #nav= haml :_nav
+      %h1 HTML5 History API
+      #content= yield

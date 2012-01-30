@@ -1,0 +1,49 @@
+%h2
+  Motivation
+  %small a.k.a. why bother
+
+%h3 Goal: responsive web app
+
+%dl.reveal
+  %dt obstacle
+  %dd html page overhead
+  %dt solution
+  %dd load compact data asynchronously (ajax)
+
+%p.reveal Yay!  But wait...
+
+%dl.reveal
+  %dt obstacle
+  %dd network latency
+  %dt solution
+  %dd client-side code (javascript)
+
+%p.reveal Sweet!  Oh, except...
+
+%dl.reveal
+  %dt obstacle
+  %dd
+    bad UX w/r/t bookmarks & back button like
+    %a{ href: 'http://maps.google.com/' } Google Maps
+  %dt solution
+  %dd
+    hashbang URLs like
+    %a{ href: 'https://twitter.com/#!/republicmn' } twitter
+
+%p.reveal
+  Awesome, now we're getting somewhere.
+  Sniff sniff, do you smell that?
+
+%dl.reveal
+  %dt obstacle
+  %dd
+    That's an ugly hack that abuses the meaning of the fragment identifier!
+    %i Why can't we have normal URLs?
+  %dt solution
+  %dd
+    Oh, wait, now we can!
+    HTML5 History API with pushState, like
+    %a{ href: 'https://github.com/mongoid/mongoid/tree/master/lib' } github
+
+%p.reveal
+  %a{ href: 'https://github.com/balupton/history.js/wiki/Intelligent-State-Handling' } Detailed and clear explanation
