@@ -10,14 +10,14 @@
   next_reveal = 0;
 
   hide_reveals = function() {
-    var reveal, revealed, _i, _len;
+    var reveal, _i, _len;
     reveals = content.getElementsByClassName('reveal');
     if (reveals.length) {
       for (_i = 0, _len = reveals.length; _i < _len; _i++) {
         reveal = reveals[_i];
         reveal.style.opacity = 0;
       }
-      return revealed = 0;
+      return next_reveal = 0;
     }
   };
 

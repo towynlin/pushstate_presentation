@@ -7,7 +7,7 @@ hide_reveals = ->
   reveals = content.getElementsByClassName 'reveal'
   if reveals.length
     reveal.style.opacity = 0 for reveal in reveals
-    revealed = 0
+    next_reveal = 0
 
 ajax = (url) ->
   xhr = new XMLHttpRequest()
