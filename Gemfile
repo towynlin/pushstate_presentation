@@ -1,7 +1,7 @@
 source :rubygems
 
-gem 'sinatra'
-gem 'thin'
+gem 'sinatra', '~> 1.3.2' # This change was made via Snyk to fix a vulnerability
+gem 'thin', '~> 1.3.1' # This change was made via Snyk to fix a vulnerability
 gem 'haml'
 
 group :test do
