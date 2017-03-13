@@ -2,7 +2,7 @@ source :rubygems
 
 gem 'sinatra'
 gem 'thin'
-gem 'haml'
+gem 'haml', '>= 4.0.5'
 
 group :test do
   gem 'rspec'

@@ -25,7 +25,8 @@ GEM
     guard-sass (0.5.4)
       guard (>= 0.4.0)
       sass (>= 3.1)
-    haml (3.1.4)
+    haml (4.0.7)
+      tilt
     multi_json (1.0.4)
     rack (1.4.1)
     rack-protection (1.2.0)
@@ -62,9 +63,12 @@ DEPENDENCIES
   guard-coffeescript
   guard-rspec
   guard-sass
-  haml
+  haml (>= 4.0.5)
   rack-test
   rspec
   ruby_gntp
   sinatra
   thin
+
+BUNDLED WITH
+   1.13.6
