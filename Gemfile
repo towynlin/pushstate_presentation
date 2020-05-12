@@ -1,12 +1,12 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem 'sinatra'
-gem 'thin'
+gem 'sinatra', '~>2.0.8'
+gem 'thin', '~>1.7.2'
 gem 'haml'
 
 group :test do
   gem 'rspec'
-  gem 'rack-test', require: 'rack/test'
+  gem 'rack-test', '~>1.1.0', require: 'rack/test'
 end
 
 group :development do
@@ -14,6 +14,5 @@ group :development do
   gem 'guard'
   gem 'guard-rspec'
   gem 'guard-bundler'
-  gem 'guard-sass'
   gem 'guard-coffeescript'
 end
