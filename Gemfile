@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'sinatra', '~>2.0.8'
+gem 'sinatra', '~>2.2.0'
 gem 'thin', '~>1.7.2'
 gem 'haml'
 
